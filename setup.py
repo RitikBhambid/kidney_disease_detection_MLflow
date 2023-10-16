@@ -6,10 +6,10 @@ with open("README.md", "r", encoding="utf-8") as f:
 
 __version__ = "0.0.0"
 
-REPO_NAME = "Kidney-Disease-Classification-MLflow-DVC"
-AUTHOR_USER_NAME = "entbappy"
+REPO_NAME = "kidney_disease_detection_MLflow"
+AUTHOR_USER_NAME = "Ritik Bhambid"
 SRC_REPO = "cnnClassifier"
-AUTHOR_EMAIL = "entbappy73@gmail.com"
+AUTHOR_EMAIL = "ritikbhambid@gmail.com"
 
 
 setuptools.setup(
