@@ -1,0 +1,15 @@
+artifact_uri: file:///F:/kidney_disease_detection_MLflow/mlruns/0/4617faa56f0641e783a58bbd98e54814/artifacts
+end_time: 1698468773870
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: 4617faa56f0641e783a58bbd98e54814
+run_name: orderly-crab-301
+run_uuid: 4617faa56f0641e783a58bbd98e54814
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698468740533
+status: 3
+tags: []
+user_id: stark
