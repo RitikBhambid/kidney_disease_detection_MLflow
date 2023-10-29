@@ -1,0 +1,15 @@
+artifact_uri: file:///F:/kidney_disease_detection_MLflow/mlruns/0/d6089d5705d14dd38d340d8b02be537c/artifacts
+end_time: 1698472520029
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: d6089d5705d14dd38d340d8b02be537c
+run_name: melodic-steed-297
+run_uuid: d6089d5705d14dd38d340d8b02be537c
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698472474217
+status: 3
+tags: []
+user_id: stark

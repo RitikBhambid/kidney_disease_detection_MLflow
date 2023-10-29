@@ -142,3 +142,148 @@ x==========x]
 [2023-10-28 10:22:53,870: INFO: stage_04_evaluation: >>>>>> stage Evaluation stage completed <<<<<<
 
 x==========x]
+[2023-10-28 10:48:17,037: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2023-10-28 10:48:17,100: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-28 10:48:17,119: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-28 10:48:17,131: INFO: common: created directory at: artifacts]
+[2023-10-28 10:48:17,138: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-10-28 10:48:17,139: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2023-10-28 10:49:59,735: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2023-10-28 10:50:05,570: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2023-10-28 10:50:05,575: INFO: main: *******************]
+[2023-10-28 10:50:05,576: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2023-10-28 10:50:05,595: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-28 10:50:05,606: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-28 10:50:05,611: INFO: common: created directory at: artifacts]
+[2023-10-28 10:50:06,100: INFO: common: created directory at: artifacts/prepare_base_model]
+[2023-10-28 10:50:07,284: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2023-10-28 10:50:14,660: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2023-10-28 10:50:14,663: INFO: main: *******************]
+[2023-10-28 10:50:14,663: INFO: main: >>>>>> stage Training started <<<<<<]
+[2023-10-28 10:50:14,799: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-28 10:50:14,888: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-28 10:50:14,898: INFO: common: created directory at: artifacts]
+[2023-10-28 10:50:14,901: INFO: common: created directory at: artifacts\prepare_callbacks\checkpoint_dir]
+[2023-10-28 10:50:14,904: INFO: common: created directory at: artifacts\prepare_callbacks\tensorboard_log_dir]
+[2023-10-28 10:50:14,909: INFO: common: created directory at: artifacts\training]
+[2023-10-28 10:55:09,613: INFO: main: >>>>>> stage Training completed <<<<<<
+
+x==========x]
+[2023-10-28 10:55:09,850: INFO: main: *******************]
+[2023-10-28 10:55:09,850: INFO: main: >>>>>> stage Evaluation stage started <<<<<<]
+[2023-10-28 10:55:10,132: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-28 10:55:10,203: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-28 10:55:10,256: INFO: common: created directory at: artifacts]
+[2023-10-28 10:55:53,962: INFO: common: json file saved at: scores.json]
+[2023-10-28 10:56:08,496: WARNING: save: Found untraced functions such as _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op while saving (showing 5 of 14). These functions will not be directly callable after loading.]
+[2023-10-28 10:56:09,735: INFO: builder_impl: Assets written to: C:\Users\stark\AppData\Local\Temp\tmpdw3n0kc3\model\data\model\assets]
+[2023-10-28 10:56:49,523: INFO: dir_util: creating F:\kidney_disease_detection_MLflow\mlruns\0\c12032f787e240d7bc835c31c7c3d0e0\artifacts\model\data]
+[2023-10-28 10:56:49,523: INFO: dir_util: creating F:\kidney_disease_detection_MLflow\mlruns\0\c12032f787e240d7bc835c31c7c3d0e0\artifacts\model\data\model]
+[2023-10-28 10:56:49,523: INFO: dir_util: creating F:\kidney_disease_detection_MLflow\mlruns\0\c12032f787e240d7bc835c31c7c3d0e0\artifacts\model\data\model\assets]
+[2023-10-28 10:56:49,606: INFO: dir_util: creating F:\kidney_disease_detection_MLflow\mlruns\0\c12032f787e240d7bc835c31c7c3d0e0\artifacts\model\data\model\variables]
+[2023-10-28 10:56:49,961: INFO: main: >>>>>> stage Evaluation stage completed <<<<<<
+
+x==========x]
+[2023-10-28 10:57:17,509: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2023-10-28 10:57:17,513: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-28 10:57:17,524: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-28 10:57:17,525: INFO: common: created directory at: artifacts]
+[2023-10-28 10:57:17,527: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-10-28 10:57:17,528: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2023-10-28 10:58:32,959: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.43.15:8080]
+[2023-10-28 10:58:32,960: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2023-10-28 10:59:34,623: INFO: _internal: 192.168.43.15 - - [28/Oct/2023 10:59:34] "GET / HTTP/1.1" 200 -]
+[2023-10-28 11:00:22,554: ERROR: app: Exception on /predict [POST]]
+Traceback (most recent call last):
+  File "C:\Users\stark\anaconda3\envs\kideny\lib\site-packages\flask\app.py", line 2190, in wsgi_app
+    response = self.full_dispatch_request()
+  File "C:\Users\stark\anaconda3\envs\kideny\lib\site-packages\flask\app.py", line 1486, in full_dispatch_request
+    rv = self.handle_user_exception(e)
+  File "C:\Users\stark\anaconda3\envs\kideny\lib\site-packages\flask_cors\extension.py", line 176, in wrapped_function
+    return cors_after_request(app.make_response(f(*args, **kwargs)))
+  File "C:\Users\stark\anaconda3\envs\kideny\lib\site-packages\flask\app.py", line 1484, in full_dispatch_request
+    rv = self.dispatch_request()
+  File "C:\Users\stark\anaconda3\envs\kideny\lib\site-packages\flask\app.py", line 1469, in dispatch_request
+    return self.ensure_sync(self.view_functions[rule.endpoint])(**view_args)
+  File "C:\Users\stark\anaconda3\envs\kideny\lib\site-packages\flask_cors\decorator.py", line 130, in wrapped_function
+    resp = make_response(f(*args, **kwargs))
+  File "app.py", line 41, in predictRoute
+    result = clApp.classifier.predict()
+  File "f:\kidney_disease_detection_mlflow\src\cnnClassifier\pipeline\predict.py", line 16, in predict
+    model = load_model(os.path.join("model", "model.h5"))
+  File "C:\Users\stark\anaconda3\envs\kideny\lib\site-packages\keras\saving\saving_api.py", line 212, in load_model
+    return legacy_sm_saving_lib.load_model(
+  File "C:\Users\stark\anaconda3\envs\kideny\lib\site-packages\keras\utils\traceback_utils.py", line 70, in error_handler
+    raise e.with_traceback(filtered_tb) from None
+  File "C:\Users\stark\anaconda3\envs\kideny\lib\site-packages\keras\saving\legacy\save.py", line 230, in load_model
+    raise IOError(
+OSError: No file or directory found at model\model.h5
+[2023-10-28 11:00:23,006: INFO: _internal: 192.168.43.15 - - [28/Oct/2023 11:00:23] "[35m[1mPOST /predict HTTP/1.1[0m" 500 -]
+[2023-10-28 11:17:01,211: INFO: main: >>>>>> stage Data Ingestion stage started <<<<<<]
+[2023-10-28 11:17:01,258: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-28 11:17:01,258: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-28 11:17:01,258: INFO: common: created directory at: artifacts]
+[2023-10-28 11:17:01,272: INFO: common: created directory at: artifacts/data_ingestion]
+[2023-10-28 11:17:01,273: INFO: data_ingestion: Downloading data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2023-10-28 11:20:57,768: INFO: data_ingestion: Downloaded data from https://drive.google.com/file/d/1vlhZ5c7abUKF8xXERIw6m9Te8fW7ohw3/view?usp=sharing into file artifacts/data_ingestion/data.zip]
+[2023-10-28 11:21:04,349: INFO: main: >>>>>> stage Data Ingestion stage completed <<<<<<
+
+x==========x]
+[2023-10-28 11:21:04,349: INFO: main: *******************]
+[2023-10-28 11:21:04,364: INFO: main: >>>>>> stage Prepare base model started <<<<<<]
+[2023-10-28 11:21:04,364: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-28 11:21:04,376: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-28 11:21:04,378: INFO: common: created directory at: artifacts]
+[2023-10-28 11:21:04,379: INFO: common: created directory at: artifacts/prepare_base_model]
+[2023-10-28 11:21:05,968: WARNING: saving_utils: Compiled the loaded model, but the compiled metrics have yet to be built. `model.compile_metrics` will be empty until you train or evaluate the model.]
+[2023-10-28 11:21:10,000: INFO: main: >>>>>> stage Prepare base model completed <<<<<<
+
+x==========x]
+[2023-10-28 11:21:10,000: INFO: main: *******************]
+[2023-10-28 11:21:10,016: INFO: main: >>>>>> stage Training started <<<<<<]
+[2023-10-28 11:21:10,128: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-28 11:21:10,131: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-28 11:21:10,133: INFO: common: created directory at: artifacts]
+[2023-10-28 11:21:10,156: INFO: common: created directory at: artifacts\prepare_callbacks\checkpoint_dir]
+[2023-10-28 11:21:10,158: INFO: common: created directory at: artifacts\prepare_callbacks\tensorboard_log_dir]
+[2023-10-28 11:21:10,158: INFO: common: created directory at: artifacts\training]
+[2023-10-28 11:23:40,927: INFO: main: >>>>>> stage Training completed <<<<<<
+
+x==========x]
+[2023-10-28 11:23:40,927: INFO: main: *******************]
+[2023-10-28 11:23:40,927: INFO: main: >>>>>> stage Evaluation stage started <<<<<<]
+[2023-10-28 11:23:41,227: INFO: common: yaml file: config\config.yaml loaded successfully]
+[2023-10-28 11:23:41,227: INFO: common: yaml file: params.yaml loaded successfully]
+[2023-10-28 11:23:41,878: INFO: common: created directory at: artifacts]
+[2023-10-28 11:24:30,274: INFO: common: json file saved at: scores.json]
+[2023-10-28 11:24:46,814: WARNING: save: Found untraced functions such as _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op, _jit_compiled_convolution_op while saving (showing 5 of 14). These functions will not be directly callable after loading.]
+[2023-10-28 11:24:49,178: INFO: builder_impl: Assets written to: C:\Users\stark\AppData\Local\Temp\tmpog3t83k5\model\data\model\assets]
+[2023-10-28 11:25:19,197: INFO: dir_util: creating F:\kidney_disease_detection_MLflow\mlruns\0\d6089d5705d14dd38d340d8b02be537c\artifacts\model\data]
+[2023-10-28 11:25:19,303: INFO: dir_util: creating F:\kidney_disease_detection_MLflow\mlruns\0\d6089d5705d14dd38d340d8b02be537c\artifacts\model\data\model]
+[2023-10-28 11:25:19,305: INFO: dir_util: creating F:\kidney_disease_detection_MLflow\mlruns\0\d6089d5705d14dd38d340d8b02be537c\artifacts\model\data\model\assets]
+[2023-10-28 11:25:19,529: INFO: dir_util: creating F:\kidney_disease_detection_MLflow\mlruns\0\d6089d5705d14dd38d340d8b02be537c\artifacts\model\data\model\variables]
+[2023-10-28 11:25:20,044: INFO: main: >>>>>> stage Evaluation stage completed <<<<<<
+
+x==========x]
+[2023-10-29 11:10:30,105: INFO: _internal: [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on all addresses (0.0.0.0)
+ * Running on http://127.0.0.1:8080
+ * Running on http://192.168.43.15:8080]
+[2023-10-29 11:10:30,120: INFO: _internal: [33mPress CTRL+C to quit[0m]
+[2023-10-29 11:11:08,511: INFO: _internal: 192.168.43.15 - - [29/Oct/2023 11:11:08] "GET / HTTP/1.1" 200 -]
+[2023-10-29 11:11:31,151: INFO: _internal: 192.168.43.15 - - [29/Oct/2023 11:11:31] "POST /predict HTTP/1.1" 200 -]
+[2023-10-29 11:11:57,114: INFO: _internal: 192.168.43.15 - - [29/Oct/2023 11:11:57] "POST /predict HTTP/1.1" 200 -]
+[2023-10-29 11:12:14,494: INFO: _internal: 192.168.43.15 - - [29/Oct/2023 11:12:14] "POST /predict HTTP/1.1" 200 -]
+[2023-10-29 11:12:25,825: INFO: _internal: 192.168.43.15 - - [29/Oct/2023 11:12:25] "POST /predict HTTP/1.1" 200 -]
+[2023-10-29 11:12:43,871: WARNING: polymorphic_function: 5 out of the last 5 calls to <function Model.make_predict_function.<locals>.predict_function at 0x000001FB00204DC0> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.]
+[2023-10-29 11:12:43,871: INFO: _internal: 192.168.43.15 - - [29/Oct/2023 11:12:43] "POST /predict HTTP/1.1" 200 -]
+[2023-10-29 11:12:49,536: WARNING: polymorphic_function: 6 out of the last 6 calls to <function Model.make_predict_function.<locals>.predict_function at 0x000001FB00204DC0> triggered tf.function retracing. Tracing is expensive and the excessive number of tracings could be due to (1) creating @tf.function repeatedly in a loop, (2) passing tensors with different shapes, (3) passing Python objects instead of tensors. For (1), please define your @tf.function outside of the loop. For (2), @tf.function has reduce_retracing=True option that can avoid unnecessary retracing. For (3), please refer to https://www.tensorflow.org/guide/function#controlling_retracing and https://www.tensorflow.org/api_docs/python/tf/function for  more details.]
+[2023-10-29 11:12:49,536: INFO: _internal: 192.168.43.15 - - [29/Oct/2023 11:12:49] "POST /predict HTTP/1.1" 200 -]
+[2023-10-29 11:13:05,916: INFO: _internal: 192.168.43.15 - - [29/Oct/2023 11:13:05] "POST /predict HTTP/1.1" 200 -]

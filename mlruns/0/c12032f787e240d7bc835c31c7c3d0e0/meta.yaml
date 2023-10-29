@@ -1,0 +1,15 @@
+artifact_uri: file:///F:/kidney_disease_detection_MLflow/mlruns/0/c12032f787e240d7bc835c31c7c3d0e0/artifacts
+end_time: 1698470809948
+entry_point_name: ''
+experiment_id: '0'
+lifecycle_stage: active
+run_id: c12032f787e240d7bc835c31c7c3d0e0
+run_name: bold-steed-659
+run_uuid: c12032f787e240d7bc835c31c7c3d0e0
+source_name: ''
+source_type: 4
+source_version: ''
+start_time: 1698470758478
+status: 3
+tags: []
+user_id: stark
