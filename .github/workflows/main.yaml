@@ -22,7 +22,7 @@ jobs:
 
       - name: Build and push Docker image to Docker Hub
         env:
-          DOCKER_HUB_IMAGE: ritikbhambid/kidney-disease # Replace with your Docker Hub repository name
+          DOCKER_HUB_IMAGE: ritikbhambid/kidney # Replace with your Docker Hub repository name
           DOCKER_HUB_TAG: latest
         run: |
           docker build -t $DOCKER_HUB_IMAGE:$DOCKER_HUB_TAG .
