@@ -19,7 +19,7 @@ jobs:
         with:
           submodules: recursive 
           ref: main
-        node-version: 16
+
         
 
       - name: Login to Docker Hub
