@@ -1,0 +1,40 @@
+name: Deploy to Render from Docker Hub
+
+on:
+  push:
+    branches:
+      - main
+
+permissions:
+  id-token: write
+  contents: read
+
+jobs:
+  build-and-push-docker-image:
+    name: Build and Push Docker Image
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v2
+
+      - name: Login to Docker Hub
+        run: docker login -u ${{ secrets.DOCKER_HUB_USERNAME }} -p ${{ secrets.DOCKER_HUB_PASSWORD }}
+
+      - name: Build and push Docker image to Docker Hub
+        env:
+          DOCKER_HUB_IMAGE: ritikbhambid/kidney-disease # Replace with your Docker Hub repository name
+          DOCKER_HUB_TAG: latest
+        run: |
+          docker build -t $DOCKER_HUB_IMAGE:$DOCKER_HUB_TAG .
+          docker push $DOCKER_HUB_IMAGE:$DOCKER_HUB_TAG
+
+  deploy-to-render:
+    name: Deploy to Render
+    needs: build-and-push-docker-image
+    runs-on: ubuntu-latest
+    steps:
+      - name: Deploy to Render
+        env:
+          RENDER_API_KEY: ${{ secrets.RENDER_API_KEY }}
+        run: |
+          curl -X POST "https://api.render.com/v1/services/service-id/deploy" -H "Authorization: Bearer $RENDER_API_KEY"
